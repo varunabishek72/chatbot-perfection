@@ -1,0 +1,299 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq/covid_awarness:
+  - text: " Covid-19 is a highly-contagious virus that is associated with the 
+            coronavirus family. Here's how you can prevent covid-19 from spreading.
+            
+            1. Wear a mask:
+    
+            Masks should be worn in addition to staying at least 6 feet apart, especially around people who don’t live with you.
+            Wear your mask over your nose and mouth and secure it under your chin.
+            
+            
+            2. Stay 6 feet away from others:
+   
+            Inside your home: Avoid close contact with people who are sick.
+            If possible, maintain 6 feet between the person who is sick and other household members.
+            Outside your home Put 6 feet of distance between yourself and people who don’t live in your household.
+            
+           
+            3. Arguably the most important step, Get vaccinated with Authorized Covid Vacciness. Currently in India, Covaxxin and Covishield are available to the public. 
+
+            
+            4. Avoid crowds and poorly ventilated space:
+    
+            Being in crowds like in restaurants, bars, fitness centers, or movie theaters puts you at higher risk for COVID-19.
+            Avoid indoor spaces that do not offer fresh air from the outdoors as much as possible.
+
+           
+            5. Wash your hands often
+    
+            Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.
+            It’s especially important to wash:
+            Before eating or preparing food
+            After using the restroom
+            After leaving a public place
+            After blowing your nose, coughing, or sneezing
+            After handling your mask
+            After changing a diaper
+            After caring for someone sick
+            After touching animals or pets
+            If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.
+            Avoid touching your eyes, nose, and mouth with unwashed hands.
+
+         
+            6. Clean and disinfect:
+
+            Clean high touch surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.
+            If surfaces are dirty, clean them using detergent or soap and water prior to disinfection."
+
+  utter_faq/covid_awarness2:
+  - text: " The first case of COVID-19 was reported Dec. 1, 2019, and the cause was a then-new coronavirus later named SARS-CoV-2. 
+            SARS-CoV-2 may have originated in an animal and changed (mutated) so it could cause illness in humans.
+            As of now, researchers know that the coronavirus is spread through droplets and virus particles released into the air when an infected person breathes, talks, laughs, sings, coughs or sneezes. 
+            Larger droplets may fall to the ground in a few seconds, but tiny infectious particles can linger in the air and can accumalate too, in a room without proper ventilation. This is why wearing masks, using Sanitizers and Social-Distancing is important.
+          
+            Symptoms show up in people within two to 14 days of exposure to the virus. 
+            A person infected with the coronavirus is contagious to others for up to two days before symptoms appear, and they remain contagious to others for 10 to 20 days, depending upon their immune system and the severity of their illness."
+
+  utter_faq/covid_awarness3:
+  - text: " COVID-19 is diagnosed through a laboratory test. 
+            Diagnosis by examination alone is difficult since many COVID-19 signs and symptoms can be caused by other illnesses. 
+            Some people with the coronavirus do not have symptoms at all. 
+           
+            Treatment for COVID-19 addresses the signs and symptoms of the infection and supports people with more severe disease. 
+            For mild cases of coronavirus disease, your doctor may recommend measures such as fever reducers or over-the-counter medications. 
+            More severe cases may require hospital care, where a patient may receive a combination of treatments that could include steroids, oxygen, mechanical breathing support.
+           
+            Severe COVID-19 can be fatal and can result in death."
+            
+  utter_faq/covid_awarness4:
+  - text: " Coronaviruses are named for their appearance: “corona” means “crown.” 
+            The virus’s outer layers are covered with spike proteins that surround them like a crown.
+            
+            SARS stands for severe acute respiratory syndrome. 
+            In 2003, an outbreak of SARS affected people in several countries before ending in 2004. 
+            The coronavirus that causes COVID-19 is similar to the one that caused the 2003 SARS outbreak.
+            
+            Since the 2019 coronavirus is related to the original coronavirus that caused SARS and can also cause severe acute respiratory syndrome, there is “SARS” in its name: SARS-CoV-2. "   
+
+  utter_faq/symptoms_covid:
+  - text: " If you have any of these symptoms, please contact your nearby hospital and take a rtpcr test or you can buy a covid-self test kit. 
+               
+             All the links will be shown below:
+
+             > Fever or chills
+             > Cough
+             > Shortness of breath or difficulty breathing
+             > Fatigue
+             > Muscle or body aches
+             > Headache
+             > New loss of taste or smell
+             > Sore throat
+             > Congestion or runny nose
+             > Nausea or vomiting
+             > Diarrhea
+             > body-pain
+             > sore-throat
+             > chest tightness/discomfort
+             > chest pain
+             > breathlessness
+   
+             Government testing centres take rtpcr tests for free where as private hospitals take a fee for the rtpcr test. Both Private and Government testing centres are listed below. 
+             It is recommended to take the rtpcr test twice.
+
+             All covid testing centres where you can take a rtpcr test in Chennai: https://www.medifee.com/dc-in-chennai
+   
+             To take a self test, covid-self is used and can get the result in 15 minutes. Buy it from here: https://www.flipkart.com/mylab-coviself-covid-19-rapid-antigen-self-test-kit/p/itm4d34ea09cad97
+             It should be noted that the covi-self kit should be used only on symptomatic individuals and on the immediate contacts of laboratory-confirmed positive cases. Remember to install the app too."   
+
+  utter_faq/things_2know:
+  - text: "  The covid-19 products included are Mask, Sanitizers, Thermometer, Pulse-oximeter, PPE kit and Gloves.
+
+         
+             Things to keep in mind when choosing Masks:
+
+             Do not use masks made out of fleece. A recent study shows that wearing a fleece mask actually increases the number of respiratory droplets being released into the air,” 
+
+             1. Best fitting: Does the mask fit snuggly around your face but isn’t too constricting? The mask should cover your nose and fit across the bridge of your nose and cheeks, sit comfortably under your chin and hug the sides of your face and cheeks without gaps.
+
+             2.Breathability: Look for multi-layered tight woven cotton, cotton-polyester blends or linen. Do not wear masks made out of fleece, because fleece may not provide as much filtration as other multi-layered coverings according to a recent study.
+
+             3. Moisture wicking: Fabrics with soft stretchy material, such as spandex or polyester, pull moisture away from your skin, helping to keep you cooler
+
+             4. Stays in place and easy to put on: The mask should be secured by the use of earloops or ties
+
+             5. Long-term use: Is the mask washable and will it retain its shape without damage after washing?
+
+             Children under the age of 2 should refrain from wearing masks and those who are unable to remove a mask themselves should also not wear a mask.
+
+
+
+
+
+              2. Things to keep in mind when choosing Sanitizers.
+
+              Alcohol Content:
+              According to the US Centers for Disease Control & Prevention, the hand sanitizer you choose should contain mostly alcohol, with very few ingredients added. Ideally, it should have a minimum of 70% isopropyl alcohol or 60% ethyl alcohol.
+              Other ingredients that can be added to it include sterile distilled water, glycerin, and hydrogen peroxide. Avoid any sanitizer that contains 1-propanol or methanol, as both of these ingredients are toxic and harmful.
+
+              Germ Killing Properties:
+              It is important to understand that most hand sanitizers effectively reduce the number of germs in your hands, but they may not kill all types of microbes. The sanitizer that you choose should claim to kill at least 99% of germs in your hands so that you can be sure of its quality and efficacy.
+
+              Expiry Date:
+              Hand sanitizers stay effective for a certain period only, after which their germ-killing capacity reduces to a great extent. You must buy a sanitizer that has a long expiry date so that even if you purchase a large size container, it does not expire even before you can use it.
+
+              Fragrance:
+              Once you sanitize your hands, it should not leave an alcohol-like smell in them. Therefore, a number of fragrances are added to sanitizers to make them pleasant.
+
+              Moisturising:
+              The main aim of a hand sanitizer is to kill germs and keep hands hygienic. But wouldn’t it be nice if they provide the added benefit of moisturising as well? Certain sanitizers also contain moisturiser so that the hands can stay soft and hydrated instead of getting dry due to alcohol. It is also important to prefer a sanitizer that does not feel sticky on your hands after use.
+
+              Size:
+              You would need sanitizers in multiple sizes, such as a small size that you can keep in your purse or pocket and a large size that you can keep at home so that you don’t need to refill it every other day. You can find sanitizers in varying sizes, such as 50 ml, 60 ml, 100 ml, 250 ml, 450 ml, etc. 
+
+
+            
+              3. Things to keep in mind when choosing a PPE Kit:
+
+              First is the type of anticipated exposure. This is determined by the type of anticipated exposure, such as touch, splashes or sprays, or large volumes of blood or body fluids that might penetrate the clothing. PPE selection, in particular the combination of PPE, also is determined by the category of isolation precautions a patient is on. 
+
+              Second, and very much linked to the first, is the durability and appropriateness of the PPE for the task. This will affect, for example, whether a gown or apron is selected for PPE, or, if a gown is selected, whether it needs to be fluid resistant, fluid proof, or neither. 
+
+              Third is fit. (optional question) How many of you have seen someone trying to work in PPE that is too small or large? PPE must fit the individual user, and it is up to the employer to ensure that all PPE are available in sizes appropriate for the workforce that must be protected.
+
+           
+        
+              4. Things to keep in mind when choosing a Thermometer
+ 
+              Accuracy: This is the most essential factor to look for when buying a thermometer. When you're attempting to identify a fever, you have to realize that the temperature you're getting is right. Pick a thermometer that medicinal specialists concur is precise.
+
+              Suitability: Be specific about the age for which you are buying a thermometer. There are some that can be used for all ages, while others are exclusively for an infant's body to work appropriately. Read through the specifics so as to ensure the thermometer you're picking is fitting to use on your matured youngster.
+ 
+              Fahrenheit Or Celsius: Which unit do you like to quantify it? Ensure that the thermometer you pick will give you a correct reading in Fahrenheit Or Celsius, whichever you have chosen.
+
+              Speed: If you are looking for a thermometer for your infant, keep in mind that they don't have much tolerance for jabbing and goading. While picking a thermometer, pick one that will give you accurate results in a fraction of seconds. You would prefer not to attempt and hold them down for an entire one-minute reading.
+
+              Backlit display: Thermometers that have a backlit display are preferred more as they can be used during the night as well. Especially if you have a baby, a thermometer that has a backlit display would make your work and life easier.
+
+
+
+             5. Things to keep in mind when choosing a pulse-oximeter
+
+             Pulse Oximeter's Battery Life Should Be Good: Most pulse oximeters are powered by either AAA or AA batteries and it is good to consider the possible battery life of a device, and how long can it last on a single pair of batteries. Look for a product, which should offer around 20 hours of battery life.
+
+             Should Support Data Transfer If you are planning to get a high-end pulse oximeter, then another interesting feature to consider is the support for data transfer to a computer using the USB port. This allows users to have all the data saved in an external device, which can be shared with medical professionals online.
+
+             Pulse Oximeter With Splash Proof Build Quality: Some of the pulse oximeters are also splash resistant, ensuring the device does not get spoiled if the device comes in contact with sweat or water.
+
+             One can get a pulse oximeter for less than Rs. 1000, while some of the high-end pulse oximeters cost more than Rs. 5000. So, depending on your budget, you can get the one that fits your bill. The device should show less than two percent difference, which explains the sensitivity and accuracy of your pulse oximeter.
+
+           
+             6. Things to know before choosing gloves:
+
+             > Purpose – patient care, environmental services, other 
+             > Glove material – vinyl, latex, nitrile, other 
+             > Sterile or nonsterile 
+             > One or two pair 
+             > Single use or reusable "   
+
+
+  utter_faq/articles_change:
+  - text: "Here are some articles that you might enjoy reading. 
+          These articles contain a variety of Topics, ranging from Covid-19 to the internet, I hope you enjoy reading.
+          
+          > https://jamesclear.com/five-step-creative-process
+
+          > https://jamesclear.com/stay-on-the-bus
+
+          > https://jamesclear.com/creative-thinking
+
+          > https://jamesclear.com/saying-no
+
+          > https://jamesclear.com/dont-start-from-scratch
+
+          > https://jamesclear.com/saying-no
+
+          > https://jamesclear.com/getting-simple
+
+          > https://jamesclear.com/zanshin
+
+          > https://jamesclear.com/one-sentence-habits
+
+          > https://jamesclear.com/habit-tracker
+
+          > https://jamesclear.com/journaling-one-sentence
+ 
+          > https://jamesclear.com/saying-no
+
+          > https://jamesclear.com/the-downside-of-being-effective
+
+          > https://jamesclear.com/luck-vs-hard-work
+
+          > https://jamesclear.com/goldilocks-rule
+
+          > https://jamesclear.com/kasparov-confidence
+
+          > https://jamesclear.com/giving-up
+
+          > https://jamesclear.com/reading-comprehension-strategies
+
+          > https://jamesclear.com/beginners-guide-deliberate-practice
+
+          > https://jamesclear.com/master-one-thing
+
+          > http://www.nybooks.com/articles/2011/06/23/epidemic-mental-illness-why/
+
+          > http://www.nybooks.com/articles/2011/07/14/illusions-of-psychiatry/
+
+          > http://hyperboleandahalf.blogspot.de/2011/10/adventures-in-depression.html
+
+          > https://www.1843magazine.com/features/death-of-the-calorie
+
+          > http://www.newyorker.com/reporting/2014/05/12/140512fa_fact_widdicombe?printable=true&currentPage=all
+
+          > http://www.newyorker.com/magazine/2011/02/07/the-peanut-puzzle "   
+
+
+  utter_faq/hospital_vaccicenters:
+  - text: "Check this link to see all Hospitals with a covid ward along with number of beds and oxygen beds. 
+          
+           Check this link to see all Government and Private testing centres: https://www.medifee.com/dc-in-chennai
+          
+           Check this link to see all places where you can get vaccinated in Chennai: https://web.archive.org/web/20210323013346/https://chennaicorporation.gov.in/images/covd_hosp.pdf"                
+            
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
